@@ -1,0 +1,520 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Data Science in Education</title>
+
+	<meta name="description" content="Data Science in Education">
+	<meta name="author" content="William R. Buchanan">
+	<meta name="institution" content="Fayette County Public Schools">
+	<meta name="title" content="Director of Grants, Research, Accountability, and Data">
+	<meta name="location" content="701 East Main Street, Lexington, KY 40502">
+	<meta name="contact" content="Billy.Buchanan@fayette.kyschools.us">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/simple.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Printing and PDF exports -->
+	<script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
+		<section>
+			<!-- Under the hood -->
+			<section>
+				<h2>Billy Buchanan, Ph.D.</h2>
+				<h4>Director, Office of Grants, Research, Accountability, &amp; Data</h4>
+				<h4>Fayette County Public Schools</h4>
+				<h4>Lexington, KY</h4>
+				<aside class="notes">
+					<ul>
+						<li>Be sure to explain that these are personal philosophies and don't necessarily reflect an official view of FCPS.</li>
+						<li></li>
+						<li></li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+
+		<section data-autoslide="2000">
+			<br><h2>What data should be in an ODS?</h2>
+		</section>
+
+		<section>
+			<!-- Under the hood -->
+			<section>
+
+				<ul>
+					<li>Current operational data</li>
+						<ul>
+							<li>Broadly, data on/about students, staff, &amp; schools</li>
+							<li>Financial data</li>
+							<li>Operations data</li>
+							<li><strong>Data quality measures</strong></li>
+						</ul>
+				</ul>
+				<aside class="notes">
+					<ul>
+						<li>Financial Data would include budgets, revenues, expenditures, requisitions, etc...</li>
+						<li>Operations data would entail things focused on the operational side of the house</li>
+						<li>Transportation, Help/Request Tickets, etc....</li>
+					</ul>
+				</aside>
+			</section>
+			<section>
+				<ul>
+					<li>Learning system data</li>
+					<ul>
+						<li>Use &amp; adoption</li>
+						<li>Progress indicators</li>
+						<li>Formative assessment/task results</li>
+						<li>Digital credentials earned in that school year</li>
+					</ul>
+					<li>AI/ML Outputs</li>
+				</ul>
+				<aside class="notes">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+
+		<!-- Under the hood -->
+		<section data-autoslide="2000">
+			<br><h2>How do you map this data to Ed-Fi?</h2>
+		</section>
+
+		<section>
+			<section data-autoslide="2000">
+				<h3>We do not have an ODS instance running currently.</h3>
+			</section>
+			<section data-autoslide="2000">
+				<h3>We'll talk about things in the context of data warehousing, since that is what we do have set up.</h3>
+			</section>
+		</section>
+
+		<section data-autoslide="2000">
+			<h2>Is there a progression for this work?</h2>
+		</section>
+
+		<section>
+			<section>
+				<ul>
+					<li>Get semantic mapping of sending and receiving data models</li>
+					<li>Identify overlap between the models and gaps between the models</li>
+					<li>Determine whether or not the receiving data model needs to be extended/expanded</li>
+					<li>Define the business rules required to map the data from the sending to receiving systems</li>
+					<li>Run ETL</li>
+				</ul>
+				<aside class="notes">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+
+		<section data-autoslide="2000">
+			<h2>What is the most critical step and resource for this work?</h2>
+		</section>
+		<section>
+
+			<!-- Under the hood -->
+			<section>
+				<p>Developing a shared understanding across the organization to prioritize <strong>allocating resources</strong> (people, tech, equipment, etc...)
+				necessary to <strong>implement data governance, manage &amp; maintain metadata, &amp; shape procurement behavior</strong> (e.g., purchasing products that will integrate with the system's architecture).</p>
+				<aside class="notes">
+					<ul>
+						<li>The most critical resources are your people.</li>
+						<li>The most critical step is accurately defining the business rules.</li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+
+		<section data-autoslide="2000">
+			<h2>Data Governance</h2>
+		</section>
+
+		<section>
+			<section>
+				<ul>
+					<li>FCPS started developing training materials related to data governance.</li>
+					<li>You can freely use and contribute (if you'd like) from our GitHub repository: <a href="https://github.com/fcps/dataGovernance" target="_blank">https://github.com/fcps/dataGovernance</a></li>
+					<li>You can view the slides here: <a href="https://fcps.github.io/dataGovernance/" target="_blank">https://fcps.github.io/dataGovernance/</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<ul>
+					<li>Master data management/metadata management is critical to all things data governance</li>
+					<li>Big thing is to make sure that data system managers have veto power on the data governance committee</li>
+					<li>Make sure that veto power requires the system managers to defend/define why they are using the veto</li>
+				</ul>
+				<aside class="notes">
+					<ul>
+						<li>Reason for veto power is to prevent decisions from other parts of the organization from having a detrimental effect on systems</li>
+						<li>We are trying to get our DGC to be comprised of Cabinet level members</li>
+						<li>Cabinet members would identify their data stewards</li>
+						<li>Data Managers are spread across a few different offices</li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+
+		<section>
+			<br><h3>Visualization Design Process</h3>
+		</section>
+		<section>
+			<!-- Under the hood -->
+			<section>
+				<p>Due to time constraints, I'll refer folks to some slides that I used for a talk a few years ago:</p>
+				<p><a href="https://github.com/wbuchanan/stataDataVizSDP2016/" target="_blank">Becoming a Better Data Communicator: Stata Data Visualization</a></p>
+				<p>I strongly recommend the KeyNote version of the slide deck over the Power Point version.</p>
+				<aside class="notes">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</aside>
+			</section>
+
+		</section>
+
+		<section data-autoslide="2500">
+			<h2>Visualizing model diagnostics</h2>
+		</section>
+
+		<section>
+
+			<section>
+				<ul>
+					<li>There are different estimators that can be derived from matching algorithms.</li>
+					<li>ATET = Average Treatment Effect on the Treated</li>
+					<li>ATE = Average Treatment Effect</li>
+					<li>For these examples, I modified an example dataset from: <a href="https://www.amazon.com/Methods-Matter-Improving-Inference-Educational/dp/0199753865/ref=sr_1_1?hvadid=241651127887&hvdev=c&hvlocphy=9005925&hvnetw=g&hvpos=1t1&hvqmt=e&hvrand=7095992781440795073&hvtargid=kwd-25297294049&keywords=methods+matter&qid=1552384689&s=gateway&sr=8-1&tag=googhydr-20" target="_blank">
+						Murnane, R. J. &amp; Willett, J. B. (2010). <em>Methods matter: Improving causal inference in educational and social science research.</em>  New York City, NY: Oxford University Press
+					</a></li>
+				</ul>
+				<aside class="notes">
+					<ul>
+						<li>Visualizing the assumptions of both the Average Treatment Effect on the Treated (ATET) and the Average Treatment Effect (ATE) can be useful to illustrate differences in the models</li>
+						<li>Example dataset is specifically the dataset used to illustrate propensity score matching methods, but uses the context of attending Catholic school vs traditional public schools</li>
+						<li>Pre/Post Test Score results are four year apart (8th grade and 12th grade).</li>
+					</ul>
+				</aside>
+			</section>
+
+			<!-- Under the hood -->
+			<section  data-autoslide="2500">
+				<br><h3>Visualizing model diagnostics/assumptions</h3>
+				<br><h4>Propensity Score Matching Balance Plots</h4>
+			</section>
+
+			<section>
+				<h4>ATE Balance Plot</h4>
+				<img src="img/ateBalance.svg">
+			</section>
+
+			<section>
+				<h4>ATET Balance Plot</h4>
+				<img src="img/atetBalance.svg">
+			</section>
+
+			<section data-autoslide="2500">
+				<br><h3>Visualizing model diagnostics/assumptions</h3>
+				<br><h4>Propensity Score Box Plots</h4>
+			</section>
+
+			<section>
+				<h4>ATE Box Plot</h4>
+				<img src="img/ateBoxplot.svg">
+			</section>
+
+			<section>
+				<h4>ATET Box Plot</h4>
+				<img src="img/atetBoxplot.svg">
+			</section>
+
+			<section data-autoslide="2500">
+				<br><h3>Visualizing model diagnostics/assumptions</h3>
+				<br><h4>Propensity Score Overlap Plots</h4>
+			</section>
+
+			<section>
+				<h4>ATE Overlap Plot</h4>
+				<img src="img/ateOverlap.svg">
+			</section>
+
+			<section>
+				<h4>ATET Overlap Plot</h4>
+				<img src="img/atetOverlap.svg">
+			</section>
+
+
+			<!-- Under the hood -->
+			<section>
+				<br><h3>Visualizing the estimated effect</h3>
+				<ul>
+					<li>No example available due to time constraints.</li>
+				</ul>
+				<aside class="notes">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+
+			<!-- Under the hood -->
+		<section>
+			<br><h3>Operational visualizations</h3>
+			<aside class="notes">
+				<ul>
+					<li>Mention that these examples are more intended to be illustrative of ways that usage data can be visualized.</li>
+				</ul>
+			</aside>
+		</section>
+
+		<section data-autoslide="2500">
+			<h2>Sankey Diagrams of Test Performance across adjacent years</h2>
+		</section>
+		<section>
+			<section>
+				<h4>2015-2016 Test Performance</h4>
+				<img src="img/sankey1516.svg" style="max-height: 550px;">
+			</section>
+
+			<section>
+				<h4>2016-2017 Test Performance</h4>
+				<img src="img/sankey1617.svg" style="max-height: 550px;">
+			</section>
+
+			<section>
+				<h4>2017-2018 Test Performance</h4>
+				<img src="img/sankey1718.svg" style="max-height: 550px;">
+			</section>
+		</section>
+
+		<section data-autoslide="2500">
+			<h2>Usage Data by Latent Classes</h2>
+		</section>
+
+		<section>
+			<section>
+				<iframe src="asgClassReport.html" style="width: 1200px !important; height: 600px"></iframe>
+			</section>
+
+			<section>
+				<iframe src="classByRIT.html" style="width: 1200px !important; height: 600px"></iframe>
+			</section>
+
+			<section>
+				<iframe src="classReports.html" style="width: 1200px !important; height: 600px"></iframe>
+			</section>
+
+			<section>
+				<iframe src="studentGoalSettingWorksheet.html" style="width: 1200px !important; height: 600px"></iframe>
+			</section>
+
+			<section>
+				<iframe src="studentProgressReport.html" style="width: 1200px !important; height: 600px"></iframe>
+			</section>
+		</section>
+
+	</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    Reveal.initialize({
+
+		width : "75%",
+
+        // Display presentation control arrows
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Set default timing of 2 minutes per slide
+        defaultTiming: 120,
+
+        // Display the page number of the current slide
+        slideNumber: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (video/audio/iframe)
+        // - null: Media will only autoplay if data-autoplay is present
+        // - true: All media will autoplay, regardless of individual setting
+        // - false: No media will autoplay, regardless of individual setting
+        autoPlayMedia: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+//		autoSlide: 120000,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: false,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: Reveal.navigateNext,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Opens links in an iframe preview overlay
+        // Add `data-preview-link` and `data-preview-link="false"` to customise each link
+        // individually
+        previewLinks: false,
+
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Transition speed
+        transitionSpeed: 'slow', // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Parallax background image
+        parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+        // Parallax background size
+        parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+        // Number of pixels to move the parallax background per slide
+        // - Calculated automatically unless specified
+        // - Set to 0 to disable movement along an axis
+        parallaxBackgroundHorizontal: null,
+        parallaxBackgroundVertical: null,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        markdown: {
+            smartypants: true
+        },
+
+        math: {
+            mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+            config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+        },
+
+		// Configuration for multiplexing the slide deck for the client side
+        multiplex: {
+            // Example values. To generate your own, see the socket.io server instructions.
+            secret: null, // null so the clients do not have control of the master presentation
+            id: 'wbuchanan', // id, obtained from socket.io server
+            url: 'https://revealjs-kiqdxyfymn.now.sh/' // Location of your socket.io server
+        },
+
+		dependencies: [
+
+		    // Adds dependencies for multiplexing
+            { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+            { src: 'plugin/multiplex/client.js', async: true },
+
+            // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+            // Interpret Markdown in <section> elements
+            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+            // Syntax highlight for <code> elements
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+            // Zoom in and out with Alt+click
+            { src: 'plugin/zoom-js/zoom.js', async: true },
+
+            // Speaker notes
+            { src: 'plugin/notes/notes.js', async: true },
+
+            // MathJax
+            { src: 'plugin/math/math.js', async: true }
+
+        ]
+
+    });
+
+</script>
+</body>
+</html>
